@@ -110,6 +110,14 @@ internal class Game {
         }
         variable += $"{_locations.Count + 1}. Help"; // Display the help option
         return variable; 
+        int x=_locations.Count; string Tmp="";
+        if(x==1)
+        {
+        Tmp="\n\nLast city left!";
+        } else
+        { Tmp = "\n\nCities left: "+x; }
+        variable+=Tmp;
+        //variable += "\n\n" + _locations.Count;
     }
     
     
