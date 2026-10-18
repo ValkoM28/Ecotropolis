@@ -42,8 +42,9 @@ public class UrbanChallenge {
      * and options to the player and rewarding the player based on their choice.
      * ========================================================================================================
      */
-    internal void Execute(Player player) {  
-        string stringVariable = Name + "\n"; // Display the challenge name 
+    internal void Execute(Player player, string progress = "") {  
+        string stringVariable = progress + "\n"; // Display the progress, e.g. "Challenge 2 of 5"
+        stringVariable += Name + "\n"; // Display the challenge name 
         stringVariable += WordWrap(Description, 100, "") + "\n"; // Display the challenge description
         for (int i = 0; i < Options.Count; i++) // Display the option descriptions
         {

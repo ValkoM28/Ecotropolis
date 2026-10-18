@@ -61,9 +61,9 @@ public class Location {
         string textVariable = WordWrap(WelcomeMessage, 100, "");
         PrintMessage("generic", textVariable); 
 
-        foreach (var challenge in UrbanChallenges)
+        for (int i = 1; i < UrbanChallenges.Count; i++) // Play the challenges and show progress
         {
-            challenge.Execute(player);
+            UrbanChallenges[i].Execute(player, $"Challenge {i} of {UrbanChallenges.Count}");
         }
         // Challenges completed, reward the player with an item
         (Item reward, bool earnedToken) = RewardItem(player);
