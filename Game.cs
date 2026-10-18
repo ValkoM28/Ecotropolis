@@ -122,7 +122,7 @@ internal class Game {
         stringVariable += "\n";
 
         switch (_player.SustainabilityScore) {
-            case >= 85:
+            case >= 80:
                 stringVariable += "Congratulations! You have achieved a high sustainability score.";
                 break;
             case >= 50:
@@ -130,7 +130,7 @@ internal class Game {
                 break;
             default:
                 stringVariable +=
-                    "Your sustainability score is low. Consider playing again and revist the locations to improve it.";
+                    "Your sustainability score is low. Consider playing again and revisit the locations to improve it.";
                 break;
         }
 
