@@ -109,6 +109,7 @@ internal class Game {
             variable += $"{i + 1}. {_locations[i].Name}\n";
         }
         variable += $"{_locations.Count + 1}. Help"; // Display the help option
+        variable += $"\n\nSustainability score: {_player.SustainabilityScore} | Tokens: {_player.Tokens}"; // Show progress
         return variable; 
     }
     
