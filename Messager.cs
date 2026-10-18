@@ -202,7 +202,7 @@ static class Messager {
     }
     
     if (interactive) {
-        return Console.ReadKey().KeyChar.ToString();
+        return (Console.ReadLine() ?? string.Empty).Trim();
     }
     else {
         Console.WriteLine("Press any key to continue...");
